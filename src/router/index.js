@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import pageA from '@/components/views/pageA'
 import pageB from '@/components/views/pageB'
 import pageC from '@/components/views/pageC'
+import User from '@/components/views/user'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/pageC',
       name: 'pageC',
       component: pageC
+    },
+    {
+      path: '/user/:id',
+      name: 'user',
+      component: User
     },
   ]
 })
